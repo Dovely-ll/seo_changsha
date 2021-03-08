@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="VPS Hosting Specialist">    
+    <meta property="og:image" content="https://images.cloudclusters.io/ae1b9a1cb6634b15a9be57209cbdc107/vpsmart-89.jpg">
+    <meta property="og:site_name" content="VPS-MART">
+    <meta property="og:url" content="https://www.vps-mart.com/">
+    
+<meta name="keywords" content="Private Cloud Clusters, Managed Kubernetes Clusters, Kubernetes-as-a-Service, OpenStack Clusters, Openstack-as-a-Service" />
+<meta name="description" content="Our private cloud hosting is compatible with Docker and Kubernetes, providing powerful general-purpose hosting platforms. For more detailed information, please click here." />
+<title>Private Cloud Hosting, Private-Cloud-as-a-Service| Kubernetes-as-a-Service, Openstack-as-a-Service</title>
+   
+    <link rel="icon" href="https://images.cloudclusters.io/f535a98a95c04da98fc2217d817ad9cc/vps-mart-icon.png" type="image/x-icon">    
+    <link rel="shortcut icon" href="https://images.cloudclusters.io/f535a98a95c04da98fc2217d817ad9cc/vps-mart-icon.png" type="image/x-icon" defer>    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" async/>    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" defer/>  
+    <link rel="stylesheet" type="text/css" href="https://static.cloudclusters.io/animate/3.5.2/animate.css" defer/>    
+    <link rel="stylesheet" href="https://static.cloudclusters.io/fonts/proximanova/proxima.css" defer/>
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/position.css" />
+    <link rel="stylesheet" href="/css/btn.css" />    
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/discount.css" />
+    <link rel="stylesheet" href="/css/base.css?t=2021.02.26" />
+    <script src="https://static.cloudclusters.io/jquery/3.2.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://static.cloudclusters.io/jquery/plugin/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+//  	jQuery Cookie Plugin v1.4.0
+    	(function (factory) {if (typeof define === 'function' && define.amd) {define(['jquery'], factory);} else {factory(jQuery);}}(function ($) {var pluses = /\\+/g;
+		    function encode(s) {return config.raw ? s : encodeURIComponent(s);}
+		    function decode(s) {return config.raw ? s : decodeURIComponent(s);}
+		    function stringifyCookieValue(value) {return encode(config.json ? JSON.stringify(value) : String(value));}
+		    function parseCookieValue(s) {if (s.indexOf('"') === 0) {s = s.slice(1, -1).replace(/\\\\"/g, '"').replace(/\\\\\\\\/g, '\\\\');}try {s = decodeURIComponent(s.replace(pluses, ' '));} catch(e) {return;}try {return config.json ? JSON.parse(s) : s;} catch(e) {}}
+		    function read(s, converter) {var value = config.raw ? s : parseCookieValue(s);return $.isFunction(converter) ? converter(value) : value;}
+		    var config = $.cookie = function (key, value, options) {if (value !== undefined && !$.isFunction(value)) {options = $.extend({}, config.defaults, options);if (typeof options.expires === 'number') {var days = options.expires, t = options.expires = new Date();t.setDate(t.getDate() + days);}return (document.cookie = [encode(key), '=', stringifyCookieValue(value), options.expires ? '; expires=' + options.expires.toUTCString() : '', options.path    ? '; path=' + options.path : '', options.domain  ? '; domain=' + options.domain : '', options.secure  ? '; secure' : ''].join(''));}var result = key ? undefined : {};var cookies = document.cookie ? document.cookie.split('; ') : [];for (var i = 0, l = cookies.length; i < l; i++) {var parts = cookies[i].split('=');var name = decode(parts.shift());var cookie = parts.join('=');if (key && key === name) {result = read(cookie, value);break;}if (!key && (cookie = read(cookie)) !== undefined) {result[name] = cookie;}}return result;};config.defaults = {};
+		    $.removeCookie = function (key, options) {if ($.cookie(key) !== undefined) {$.cookie(key, '', $.extend({}, options, { expires: -1 }));return true;}return false;};
+		}));
+    </script>
+    <script src="https://static.cloudclusters.io/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8" defer></script>
+    
+
+
+
+
+</head>
+<body data-spy="scroll" data-target="#guide" data-offset="50">
+	<div id="specials" class="flex-nowrap-space-around">    	 	
+		<a href="" title="Up to 50% Off VPS Hosting for New Users" class="flex-nowrap-text-center">
+		    <img src="https://images.cloudclusters.io/a01e7e341c024086bded008dc55260ec/dbmbigdeals.png" alt="VPS Hosting Big Deals" class="aniamted animatedPulse"/>
+		    <h3 class="white text-center fs-24 p-black ml-10 mb-0 mt-0">Up to 50% Off VPS Hosting for New Users</h3>
+		    <i class="fa fa-arrow-circle-right white fs-24 ml-10"></i>
+		</a>    	
+   	</div>
+    <div class="site-topbar container-fluid">
+        <ul class="nav-top">
+        	<li><a href="https://portal.databasemart.com/kb/" title="VPS Mart Knowledge Base" target="_blank"><i class="fa fa-book"></i> Knowledge Base</a></li>
+            <li><a href="https://portal.databasemart.com:443/Main/Chat/frmClientChat.aspx?config=1" target="_blank" title="Chat with us! VPS Mart"><i class="fa fa-commenting"></i> Online Chat</a></li>
+            <li><a href="https://portal.databasemart.com/Main/frmNewTicket.aspx" title="Submit VPS Mart Suport Ticket"><i class="fa fa-envelope"></i> Open Ticket</a></li>
+            <li><a href="https://clients.databasemart.com/clientarea.php" title="VPS Mart Billing System" target="_blank"><i class="fa fa-users"></i> Billing System</a></li>
+            <li><a href="/control-panel" title="VPS Mart Control Panel"><i class="fa fa-window-maximize"></i> Control Panels</a></li>
+        </ul>
+    </div>
+    <nav class="top-nav">
+        <div class=" nav content-width">
+        	<div class="three-line">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="/" title="VPS Hosting Specialist" class="index">
+                    <img class="logo-img" src="https://images.cloudclusters.io/22506d18bdcb4398ac162d379dc7eafc/vps-mart-logo.png" alt="Windows VPS & Linux VPS Hosting Specialist | VPS Mart"/>
+                </a>
+            </div>
+            <ul class="navigation">
+                <li><a href="/windows-vps" class="windows-vps" title="Windows VPS Servers">Windows VPS</a></li>
+                <li><a href="/linux-vps" class="linux-vps" title="Linux VPS Servers">Linux VPS</a></li>
+                <li><a href="/bare-metal-server" title="VPS Mart Hot Deals">Bare Metal</a></li>
+                <li><a href="/gpu-server" title="GPU Servers">GPU Servers</a></li>
+                <li><a href="/Private-Cloud" title="Private Cloud">Private Cloud</a></li>
+                <li><a href="/data-center" title="Data Centers">Data Centers</a></li>
+                <li><a href="/user-guide" title="user guide">User Guidance</a></li>
+                <li><a href="/about-us" title="About VPS Mart">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+
+<header class="rack-banner">
+	<div class="container-fluid content-width">
+		<div class="row">
+			<h1 class="text-center col-xs-12 mt-50">Why Our Private Cloud</h1>
+            <div class="text-center col-xs-12 NetworkMapImg">
+            	<img src="https://images.cloudclusters.io/69bda53350ec4dff93108d936e329747/private-cloud-03.png" alt="Private Cloud">				
+			</div>			
+			<div class="col-md-6 col-xs-12">
+				<div class="per private">									
+					<div class="private-img">
+						<img src="https://images.cloudclusters.io/67bdc62bc0e54e6eb22b6edda9e17be4/private-cloud-04.png" alt="Security"/>
+					</div>
+					<div class="private-text">
+						<h3>Security</h3>
+						<p>As “private” cloud hosting, the infrastructures are dedicated. Environment security thus gets improved at levels of storage, network, and computing.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="per private">									
+						<div class="private-img">
+							<img src="https://images.cloudclusters.io/15cf1a00c34048edbba96ef7c41ab77a/private-cloud-05.png" alt="Flexibility"/>
+						</div>
+						<div class="private-text">
+							<h3>Flexibility</h3>
+							<p>With advanced hardware configuration and well-designed networks, our private cloud service makes it easy for you to deploy the working platform according to your requirements.</p>
+						</div>					
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="per private">									
+						<div class="private-img">
+							<img src="https://images.cloudclusters.io/4b9831e3f2a140b8a360f8aaf9461dac/private-cloud-06.png" alt="Turnkey Solution"/>
+						</div>
+						<div class="private-text">
+							<h3>Turnkey Solution</h3>
+							<p>Our private cloud hosting is compatible with Docker and Kubernetes, providing powerful general-purpose hosting platforms. Our turnkey solutions can easily transform the platforms to be specific-purpose ones, such as Elastic (ELK) Stack, MongoDB cluster, or others.</p>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="per private">									
+						<div class="private-img">
+							<img src="https://images.cloudclusters.io/3efa8584c51a4856b5a769780e5123f2/private-cloud-07.png" alt="Dedicated Support"/>
+						</div>
+						<div class="private-text">
+							<h3>Dedicated Support</h3>
+							<p>The private cloud service comes with reliable 24/7 tech support. We are committed to providing technical support on server hardware and OS to help the stable infrastructures.</p>
+						</div>					
+				</div>
+			</div>
+		</div>
+	</div>    
+</header>
+<section class="Infrastructure">
+	<div class="content-width container-fluid">
+		<h2 class="text-center mb-30">Infrastructure Architecture</h2>
+		<div><img class="lazy" data-original="https://images.cloudclusters.io/f83d6a9a3d90416596de38a366be35a8/private-cloud-08.png" alt="Infrastructure Architecture"></div>
+	</div>
+</section>
+<section class="summary-price mt-50 mb-100">
+	<div class="content-width container-fluid">
+		<h2 class="text-center mb-30">Hardware/Network Specifications</h2>
+		<div class="row">			
+			<div class="detail-cycle col-lg-12">
+				<table class="table-bordered table table-condensed table-striped ">
+					<tr><th>Type</th><th>Count</th><th>Specs</th></tr>
+					<tr><td>Master Server</td><td>1</td><td>Quad-Core Xeon E3-1220 CPU, 16GB Memory, 240GB SSD + 480GB SSD</td></tr>
+					<tr><td>Node Server</td><td>3</td><td>Eight-Core Xeon E5-2670 CPU, 128GB Memory, 240GB SSD + 2x960GB SSD + 2TB SATA</td></tr>
+					<tr><td>Internal Network</td><td></td><td>10GB</td></tr>
+					<tr><td>External Network</td><td></td><td>1GB</td></tr>
+					<tr><td>Hardware Firewall</td><td></td><td>Mikrotik</td></tr>
+				</table>					
+			</div>					
+			<div class="detail-cycle col-lg-12">
+				<table class="table-bordered table">
+					<tr><th>Monthly Price</th><th>Semi-Annual Price</th><th>Annual Price</th><th>Biennial Price</th></tr>
+					<tr><td>$ <span class="emphasis">676.00</span> / month</td><td>$ <span class="emphasis">635.00</span> / month</td><td>$ <span class="emphasis">591.00</span> / month</td><td>$ <span class="emphasis">512.00</span> / month</td></tr>
+				</table>				
+			</div>
+			<div class="col-lg-12 text-center">
+				<a class="btn btn-red" target="_blank" href="https://clients.databasemart.com/cart.php?a=add&pid=113" title="Order Private Cloud">Order Now</a>		
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section class="features">
+	<div class="content-width container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+					<!--Additional Servers-->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+							<a class="a-test isshow">
+								Additional Servers
+								<span class="pull-right kube-plus">+</span>
+							</a>
+							</h4>
+						</div>
+						<div class="test-box panel-collapse" id="collapseOne">
+							<div class="panel-body">
+								<div class="full-features">												
+									<div class="row border-top kube-th" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p><b>Item</b></p>
+										</div>										
+										<div class="col-md-5 col-lg-5">
+											<p><b>Specifications</b></p>
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p><b>Pricing</b></p>
+										</div>										
+									</div>
+									<div class="row border-top kube-td" style="padding:  15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p>Master Server</p>
+										</div>
+										<div class="col-md-5 col-lg-5">
+											<p>Quad-Core Xeon E3-1220 CPU, 16GB Memory, 240GB SSD + 480GB SSD, 100Mbps Unmetered Bandwidth</p>
+											
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p><a href="/bare-metal-server" title="Dedicated Servers">$ 79.00 / m</a></p>
+										</div>																							
+									</div>
+									<div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p>Node Server</p>
+										</div>
+										<div class="col-md-5 col-lg-5">
+											<p>Eight-Core Xeon E5-2670 CPU, 128GB Memory, 240GB SSD + 2*960GB SSD + 2TB SATA, 100Mbps Unmetered Bandwidth</p>
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p><a href="/bare-metal-server" title="Dedicated Servers">$ 199.00 / m</a></p>
+										</div>																						
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Hardware Specifications -->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne" >
+							<h4 class="panel-title">
+							<a class="a-test isshow">
+									Hardware Specifications
+									<span class="pull-right kube-plus">+</span>
+							</a>
+							</h4>
+						</div>
+						<div class="test-box panel-collapse" id="collapseOne">
+							<div class="panel-body">
+								<div class="full-features">												
+									<div class="row border-top kube-th" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p ><b>Item</b></p>
+										</div>
+										<div class="col-md-5 col-lg-5">
+											<p><b>Specifications</b></p>
+										</div>	
+										<div class="col-md-4 col-lg-4">
+											<p><b>Count</b></p>
+										</div>																			
+									</div>
+									<div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p>Public Switch </p>
+										</div>										
+										<div class="col-md-5 col-lg-5">
+											<p>1Gb port</p>
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p>1</p>
+										</div>												
+									</div>
+									<div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p>Private Switch</p>
+										</div>										
+										<div class="col-md-5 col-lg-5">
+											<p>10Gb port</p>
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+										<div class="col-md-3 col-lg-3">
+											<p>Dedicated Firewall</p>
+										</div>										
+										<div class="col-md-5 col-lg-5">
+											<p>Mikrotik</p>
+										</div>
+										<div class="col-md-4 col-lg-4">
+											<p>1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Support and Management Features -->
+			        <div class="panel panel-default">
+			                <div class="panel-heading" role="tab" id="headingTwo">
+			                    <h4 class="panel-title">
+			                    <a class="a-test isshow">
+			                            Support and Management Features
+			                            <span class="pull-right kube-plus">+</span>
+			                    </a>
+			                    </h4>
+			                </div>
+			                <div class="test-box panel-collapse"  id="collapseTwo" >
+			                    <div class="panel-body">
+			                            <div class="full-features">
+			                                    <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">Root Access</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p><i class="text-success fa fa-check"></i></p>
+			                                            </div>
+			                                            <div class="col-md-4 col-lg-4">
+			                                                <p></p>
+			                                            </div>
+			                                        </div>
+			                    
+			                                        <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">Free Server Reboot</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p><i class="text-success fa fa-check"></i></p>
+			                                            </div>
+			                                            <div class="col-md-4 col-lg-4">
+			                                                <p></p>
+			                                            </div>
+			                                        </div>
+			                    
+			                                        <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">24/7/365  Technical Support</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p><i class="text-success fa fa-check"></i></p>
+			                                            </div>
+			                                            <div class="col-md-4 col-lg-4">
+			                                                <p></p>
+			                                            </div>
+			                                        </div>			                    
+			                                        <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">KVM over IP (IPMI)</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p><i class="text-success fa fa-check"></i></p>
+			                                            </div>
+			                                            <div class="col-md-4 col-lg-4">
+			                                                <p>A hardware device to control remote computers</p>
+			                                            </div>
+			                                        </div>
+			                                        
+			                                        <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">99.9% Uptime</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p><i class="text-success fa fa-check"></i></p>
+			                                            </div>													
+			                                        </div>	
+			                                        
+			                                        <div class="row border-top kube-td" style="padding: 15px 0px 15px 20px;">
+			                                            <div class="col-md-3 col-lg-3">
+			                                                <p style="font-weight:600;">Fully Managed</p>
+			                                            </div>
+			                                            <div class="col-md-5 col-lg-5">
+			                                                <p>Managed by client self</p>
+			                                            </div>														
+			                                        </div>
+			                                        
+			                                        
+			
+			                                        
+			
+			
+			                            </div>
+			                    </div>
+			                </div>
+			        </div>
+			        
+			        <!-- Optional Addons -->
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="heading3">
+			                <h4 class="panel-title">
+			                <a class="a-test isshow">
+			                        Optional Addons
+			                        <span class="pull-right kube-plus">+</span>
+			                </a>
+			                </h4>
+			            </div>
+			            <div class="test-box panel-collapse" >
+			                <div class="panel-body">
+			                        <div class="full-features">
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">240GB SSD</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$19.00/month</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">960GB SSD</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$29.00/month</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">2TB SSD</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$39.00/month</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">2TB SATA</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$19.00/month</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">4TB SATA</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$29.00/month</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                    <div class="col-md-3 col-lg-3">
+	                                                        <p style="font-weight:600;">Additional Memory</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p>$40.00/month/32GB</p>
+	                                                    </div>
+	                                                    <div class="col-md-4 col-lg-4">
+	                                                        <p></p>
+	                                                    </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                <div class="col-md-3 col-lg-3">
+	                                                    <p style="font-weight:600;">Additional Dedicated IP</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p>$2.00/month/IPv4</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p>ARIN Justification Required</p>
+	                                                </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                <div class="col-md-3 col-lg-3">
+	                                                    <p style="font-weight:600;">Shared Hardware Firewall</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p>$49.00/month</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p><a target="_blank" href="https://www.cisco.com/en/US/products/ps6120/prod_brochure0900aecd80402e36.html">Cisco ASA 5505</a></p>
+	                                                </div>
+	                                            </div>
+	
+	                                            <div class="row border-top kube-td"  >
+	                                                <div class="col-md-3 col-lg-3">
+	                                                    <p style="font-weight:600;">Dedicated Hardware Firewall</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p>$99.00/month</p>
+	                                                </div>
+	                                                <div class="col-md-4 col-lg-4">
+	                                                    <p>Cisco ASA5505 with superuser access</p>
+	                                                </div>
+	                                            </div>
+	                                    </div>
+			                </div>
+			            </div>
+			        </div>
+			        <!-- FAQ Questions -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h2 class="panel-title">
+                                <a class="a-test isshow">
+                                    Frequently Asked Questions (FAQs) for Private Cloud
+                                    <span class="pull-right kube-plus">+</span>
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="test-box panel-collapse" >
+                            <div class="panel-body">
+                                <div class="full-features">
+                                    <ul>
+                                    	<li class="row border-top kube-td">
+                                    		<h3 class="question col-xs-12">01. What is your private cloud hosting?<i class="fa fa-angle-down"></i></h3>
+                                    	    <div class="answer col-xs-12">
+                                    	    	We provide dedicated physical devices as infrastructure for our Private Cloud. On top of that, an orchestration platform could be deployed according to clients’ requirements.
+                                    	    </div>
+                                    	</li>
+                                    	<li class="row border-top kube-td">
+                                    		<h3 class="question col-xs-12">02. What can I do with your Private Cloud product?<i class="fa fa-angle-down"></i></h3>
+                                    	    <div class="answer col-xs-12">
+                                    	    	 We provide server hardware and basic OS as infrastructure. Clients are able to deploy any environment on top of that, such as Kubernetes, Open Stack, VMware ESXi, Microsoft Hyper-V, cloud storage and etc.
+                                    	    </div>
+                                    	</li>
+                                    	<li class="row border-top kube-td">
+                                    		<h3 class="question col-xs-12">03. What if I need more physical servers?<i class="fa fa-angle-down"></i></h3>
+                                    	    <div class="answer col-xs-12">
+                                    	    	You can purchase additional servers any time and integrate them to your existing cluster.
+                                    	    </div>
+                                    	</li>
+                                    	<li class="row border-top kube-td">
+                                    		<h3 class="question col-xs-12">04. What orchestration platforms does your private cloud support?<i class="fa fa-angle-down"></i></h3>
+                                    	    <div class="answer col-xs-12">
+                                    	    	The primary supported platform is Kubernetes. But other cloud computer computing orchestration platforms are possible. Anything you require, anything you can deploy.
+                                    	    </div>
+                                    	</li>
+                                    	<li class="row border-top kube-td">
+                                    		<h3 class="question col-xs-12">05. What’s your support scope for Private Cloud?<i class="fa fa-angle-down"></i></h3>
+                                    	    <div class="answer col-xs-12">
+                                    	    	We provide support for server hardware and network. Application cluster will be deployed and managed on client self. But we are able to provide technical support if you deploy Kubernetes on the Private Cloud. 
+                                    	    </div>
+                                    	</li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+    <section class="footer">
+        <div class="links">
+            <div class="container-fluid content-width-01">
+                <div class="row">
+                    <div class="col-sm-4 pt-50">
+                        <div class="logo">
+                            <a href="/" class="index" title="VPS Hosting Specialist"><img class="lazy" data-original="https://images.cloudclusters.io/177x163/598294d25a4c4012b0d5137d46735975/vps-mart-51.png" alt="Database Mart LLC"/></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h3><i class="fa fa-home"></i> Hosting Center</h3>
+                                <a title="Windows 2016 VPS Servers" href="/windows-vps" class="windows-vps">Windows VPS Servers</a>
+                                <a title="Linux VPS Servers" href="/linux-vps" class="linux-vps">Linux VPS Servers</a>
+                                <a title="Bare Metal/Dedicated Servers" href="/bare-metal-server">Bare Metal/Dedicated Servers</a>
+                                <a title="GPU Servers" href="/gpu-server">GPU Servers</a>
+                                <a href="/Private-Cloud" title="Private Cloud">Private Cloud</a>
+                                <a title="Windows VPS & Dedicated Server Management Service" href="/Management">Windows Management Services</a>
+                                <a title="Domain Registration" href="/Domain">Domain Registration</a>
+                                <a title="SSL Certificates" href="/SSL">SSL Certificates</a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h3><i class="fa fa-users"></i> Support Center</h3>
+                                <a title="VPS Hosting User Guidance" href="/user-guide">User Guidance</a>
+                                <a title="Helpdesk" href="https://portal.databasemart.com/" target="_blank">Helpdesk</a>
+                                <a title="Frequently Asked Questions" href="/FAQ">Frequently Asked Questions</a>
+                                <a title="Control Panels" href="/control-panel">Control Panels</a>
+                                <a title="Knowledgebase" href="https://portal.databasemart.com/kb/" target="_blank">Knowledgebase</a>                               
+                                <a title="Customer Billing System" href="https://clients.databasemart.com/clientarea.php" target="_blank">Client Billing System</a>                            	
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h3><i class="fa fa-database"></i> Information Center</h3>
+                                <a title="About VPS Mart" href="/about-us">About Us</a>
+                                <a title="Why Choose VPS Mart" href="/Why">Why Choose Us</a>
+                                <a title="Client Testimonials for VPS Mart" href="/Testimonials">Client Testimonials</a>
+                                <a title="Network and Data Center" href="/data-center">Data Centers</a>
+                                <a title="Terms of Service" href="/TOS">Terms of Service</a>
+                                <a title="Privacy Policy" href="/privacy-policy">Privacy Policy</a>                                
+                                <a title="Service Level Agreement" href="/sla">Service Level Agreement(SLA)</a>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="container-fluid content-width-01 ">
+                <div class="row">
+                    <h3 class="col-lg-offset-1 col-lg-3 col-md-3 col-sm-12">Payment Accepted</h3>
+                    <ul class="col-lg-8 col-md-9 col-sm-12">
+                        <li title="Paypal"><i class="fa fa-cc-paypal"></i></li>
+                        <li title="Visa"><i class="fa fa-cc-visa"></i></li>
+                        <li title="MasterCard"><i class="fa fa-cc-mastercard"></i></li>
+                        <li title="American Express"><i class="fa fa-cc-amex"></i></li>
+                        <li title="JCB"><i class="fa fa-cc-jcb"></i></li>
+                        <li title="Discover"><i class="fa fa-cc-discover"></i></li>
+                        <li title="Diners Club"><i class="fa fa-cc-diners-club"></i></li>
+                        <li title="Wire Transfer"><i class="fa fa-credit-card"></i></li>
+                        <li title="Check"><i class="fa fa-money"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="other-links">
+            <div class="container-fluid content-width-01 ">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <p>Copyright ©  2005 - 2021 <a href="http://www.databasemart.com/" title="Database Mart LLC">Database Mart LLC</a> 257 Westwood Dr, League City, TX 77573</p>
+                    </div>
+                </div>
+                <div class="row other-site-link">
+                    <div class="col-lg-8">
+                        <a href="https://www.kubeclusters.com/" target="_blank" title="Fully Managed Kubernetes Server Hosting">Kubernetes Hosting</a>
+                        <a href="http://www.hyper-v-mart.com" target="_blank" title="Windows Hyper-V Hosting">Hyper-V Hosting</a>
+                        <a href="http://www.sqlservermart.com" target="_blank" title="SQL Server Hosting, MS SQL Database Hosting, SQL Server 2017 Hosting">SQL Server Hosting</a>
+                        <a href="http://www.dotnetmart.com" target="_blank" title="ASP.NET Hosting, Windows Hosting, ASP.NET 4.0 Hosting">ASP.NET Hosting</a>
+                        <a href="http://www.dnnmart.com" target="_blank" title="DotNetNuke Hosting, DNN Hosting">DNN Hosting</a>
+                        <a href="http://www.dedicatedsqlserver.com" target="_blank" title="Dedicated SQL Server Hosting">Dedicated SQL Server Hosting</a>
+                        <a href="http://www.winservermart.com" target="_blank" title="Dedicated Windows Server Hosting">Dedicated Windows Hosting</a>
+                        <a href="https://www.cockroachclusters.com/" target="_blank" title="Managed CockroachDB Cloud Server Hosting, CockroachDB as a Service">CockroachDB Hosting</a>
+                        <a href="https://www.sqlclusters.com/" target="_blank" title="Managed MySQL Cloud Server Hosting">MySQL Hosting</a>
+                        <a href="https://www.mariaclusters.com/" target="_blank" title="Managed MariaDB Cloud Server Hosting">MariaDB Hosting</a>
+                        <a href="https://www.wp-clusters.com/" target="_blank" title="Managed Wordpress Cloud Hosting">Wordpress Hosting</a>
+                        <a href="https://www.dp-clusters.com/" target="_blank" title="Managed Drupal Hosting for Websites of Massive User Base">Drupal Hosting</a>
+                        <a href="https://www.mgtclusters.com/" target="_blank" title="Magento Cloud Hosting">Magento Hosting</a>
+                        <a href="https://www.pgsclusters.com/" target="_blank" title="PostgreSQL Cloud Server Hosting">PostgreSQL Hosting</a>
+                        <a href="https://www.occlusters.com/" target="_blank" title="OpenCart Cloud Hosting">OpenCart Hosting</a>
+                        <a href="https://www.redclusters.com/" target="_blank" title="Redis Cloud Server Hosting">Redis Hosting</a>
+                        <a href="https://www.mssqlclusters.com/" target="_blank" title="SQL Server Cloud Hosting">SQL Server Cloud Hosting</a>
+                        <a href="https://www.db-clusters.com/" target="_blank" title="DBaas Cloud Hosting">DBaas Hosting</a>
+                        <a href="https://www.oraclusters.com/" target="_blank" title="Oracle Cloud Server Hosting">Oracle Hosting</a>
+                        <a href="https://www.elastic-clusters.com/" target="_blank" title="Elasticsearch Cloud Server Hosting">Elasticsearch Hosting</a>
+                        <a href="https://www.moclusters.com/" target="_blank" title="Moodle Cloud Hosting">Moodle Hosting</a>
+                        <a href="https://www.odclusters.com/" target="_blank" title="Odoo Cloud Hosting">Odoo Hosting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="use-cookies animated">
+		<div class="container-fluid">
+			<div class="row">
+				<h3>Notice<i class="fa fa-close"></i></h3>
+				<div class="col-xs-12 ">
+					<p>We use cookies to help optimize the website and give you the best experience. <a href="/privacy-policy" title="Privacy Policy of DNN Mart">Privacy Policy</a></p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <script type="text/javascript">
+    	$("img.lazy").lazyload({effect: "fadeIn",threshold: 200,placeholder : "/img/imgHolder.png"});
+		// Check that service workers are supported
+//		if ("serviceWorker" in navigator) {
+//		    // Use the window load event to keep the page load performant
+//		    window.addEventListener("load", () => {
+//		      navigator.serviceWorker.register("/service-worker.js").then(registration=>{
+//		        console.log("register succces...")
+//		      }, err=>{
+//		        console.log("register error...",err)
+//		      });
+//		    });
+//		}
+    </script>
+   	
+    <script src="/js/vps-mart.js?t=20181131754" type="text/javascript" charset="utf-8" defer></script>
+    <script>		
+		$(document).ready(function(){
+			var pageURL = window.location.pathname;
+			var navBtn = $('.navigation a');
+			navBtn.each(function(i) {
+				var $thisURL = $(this).attr('href');
+				if( $thisURL === pageURL){
+					$(this).addClass('active');
+				}
+			});
+		});
+    </script>
+    <script>
+        (function () {
+            var c = document.createElement('script');
+            c.type = 'text/javascript'; c.async = true;
+            c.src = "https://portal.databasemart.com/ChatLink.ashx?config=1&id=stlivechat0";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(c, s);
+        })();
+    </script>
+    
+<script src="/js/windows-vps.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+    	 $(document).ready(function(){
+    		(function () {    			
+    			var specials=$.cookie('hotSale');
+	            if( !window.hotsale && specials ){ 		                
+	                $('#specials').css('display','flex').find('a').attr('href',specials).find('h3').text($.cookie('hotSaleContent'));
+	            };
+	        })();
+	        $('.close-specials').on('click',function(){
+	        	$('#specials').hide();
+	        });
+	        
+    	});      
+    </script>
+</body>
+
+
+</html>
